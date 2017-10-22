@@ -1,139 +1,21 @@
-# CodeIgniter Composer Installer
+# M4Jesus
 
-[![Latest Stable Version](https://poser.pugx.org/kenjis/codeigniter-composer-installer/v/stable)](https://packagist.org/packages/kenjis/codeigniter-composer-installer) [![Total Downloads](https://poser.pugx.org/kenjis/codeigniter-composer-installer/downloads)](https://packagist.org/packages/kenjis/codeigniter-composer-installer) [![Latest Unstable Version](https://poser.pugx.org/kenjis/codeigniter-composer-installer/v/unstable)](https://packagist.org/packages/kenjis/codeigniter-composer-installer) [![License](https://poser.pugx.org/kenjis/codeigniter-composer-installer/license)](https://packagist.org/packages/kenjis/codeigniter-composer-installer)
+Agencies advertise through their own websites and efforts and word of mouth. Currently young people will hear an announcement from their church and some churches have ‘mission month’. 
+ 
+M4Jesus is a platform for young people to explore Missions offered by the Mission agencies and Churches and match their passion and gifting to find the right Missions fit or Mission agencies they can serve with (ie matchmaking millennials to the Missions agencies).
 
-This package installs the offical [CodeIgniter](https://github.com/bcit-ci/CodeIgniter) (version `3.1.*`) with secure folder structure via Composer.
+# Features
+- Users can match with available Mission Trips from different Missions Agencies
+- Users will have their details in the platform so that they will not have to keep on filling up forms
+- Users can send their details privately to Missions Agencies they choose to engage with upon signing up for a trip
+- Users can write their testimonies (experiences) about the recent trip they came from
+- Users can rate the Missions Agencies (MA) regarding their recent trip
+- MA can register for the platform
+- Their corporate details will be captured by the system
+- MA can add trip details and its criteria to be matched by users looking for STM trips 
+- MA can see users testimonies
+- MA can write a private NOTE on Users from the recent trip
+- MA can rate the user
 
-**Note:** If you want to install CodeIgniter4 (under development), see <https://github.com/kenjis/codeigniter-composer-installer/tree/4.x>.
-
-You can update CodeIgniter system folder to latest version with one command.
-
-## Folder Structure
-
-```
-codeigniter/
-├── application/
-├── composer.json
-├── composer.lock
-├── public/
-│   ├── .htaccess
-│   └── index.php
-└── vendor/
-    └── codeigniter/
-        └── framework/
-            └── system/
-```
-
-## Requirements
-
-* PHP 5.3.7 or later
-* `composer` command (See [Composer Installation](https://getcomposer.org/doc/00-intro.md#installation-linux-unix-osx))
-* Git
-
-## How to Use
-
-### Install CodeIgniter
-
-```
-$ composer create-project kenjis/codeigniter-composer-installer codeigniter
-```
-
-Above command installs `public/.htaccess` to remove `index.php` in your URL. If you don't need it, please remove it.
-
-And it changes `application/config/config.php`:
-
-~~~
-$config['composer_autoload'] = FALSE;
-↓
-$config['composer_autoload'] = realpath(APPPATH . '../vendor/autoload.php');
-~~~
-
-~~~
-$config['index_page'] = 'index.php';
-↓
-$config['index_page'] = '';
-~~~
-
-#### Install Translations for System Messages
-
-If you want to install translations for system messages:
-
-```
-$ cd /path/to/codeigniter
-$ php bin/install.php translations 3.1.0
-```
-
-#### Install Third Party Libraries
-
-[Codeigniter Matches CLI](https://github.com/avenirer/codeigniter-matches-cli):
-
-```
-$ php bin/install.php matches-cli master
-```
-
-[CodeIgniter HMVC Modules](https://github.com/jenssegers/codeigniter-hmvc-modules):
-
-```
-$ php bin/install.php hmvc-modules master
-```
-
-[Modular Extensions - HMVC](https://bitbucket.org/wiredesignz/codeigniter-modular-extensions-hmvc):
-
-```
-$ php bin/install.php modular-extensions-hmvc codeigniter-3.x
-```
-
-[Ion Auth](https://github.com/benedmunds/CodeIgniter-Ion-Auth):
-
-```
-$ php bin/install.php ion-auth 2
-```
-
-[CodeIgniter3 Filename Checker](https://github.com/kenjis/codeigniter3-filename-checker):
-
-```
-$ php bin/install.php filename-checker master
-```
-
-[CodeIgniter Rest Server](https://github.com/chriskacerguis/codeigniter-restserver):
-
-```
-$ php bin/install.php restserver 2.7.2
-```
-[CodeIgniter Developer Toolbar](https://github.com/JCSama/CodeIgniter-develbar):
-
-```
-$ php bin/install.php codeigniter-develbar master
-```
-
-### Run PHP built-in server (PHP 5.4 or later)
-
-```
-$ cd /path/to/codeigniter
-$ bin/server.sh
-```
-
-### Update CodeIgniter
-
-```
-$ cd /path/to/codeigniter
-$ composer update
-```
-
-You must update files manually if files in `application` folder or `index.php` change. Check [CodeIgniter User Guide](http://www.codeigniter.com/user_guide/installation/upgrading.html).
-
-## Reference
-
-* [Composer Installation](https://getcomposer.org/doc/00-intro.md#installation-linux-unix-osx)
-* [CodeIgniter](https://github.com/bcit-ci/CodeIgniter)
-* [Translations for CodeIgniter System](https://github.com/bcit-ci/codeigniter3-translations)
-
-## Related Projects for CodeIgniter 3.x
-
-* [Cli for CodeIgniter 3.0](https://github.com/kenjis/codeigniter-cli)
-* [ci-phpunit-test](https://github.com/kenjis/ci-phpunit-test)
-* [CodeIgniter Simple and Secure Twig](https://github.com/kenjis/codeigniter-ss-twig)
-* [CodeIgniter Doctrine](https://github.com/kenjis/codeigniter-doctrine)
-* [CodeIgniter Deployer](https://github.com/kenjis/codeigniter-deployer)
-* [CodeIgniter3 Filename Checker](https://github.com/kenjis/codeigniter3-filename-checker)
-* [CodeIgniter Widget (View Partial) Sample](https://github.com/kenjis/codeigniter-widgets)
+# UI
+- Semantic UI
